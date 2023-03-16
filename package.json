@@ -1,0 +1,22 @@
+{
+  "name": "challenge-40days",
+  "version": "1.0.0",
+  "description": "``` mongod --dbpath /Users/rebecca/Documents/mongoDB/data --logpath /Users/rebecca/Documents/mongoDB/logs/mongo.log ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jung0730/node-challenge-40days.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jung0730/node-challenge-40days/issues"
+  },
+  "homepage": "https://github.com/jung0730/node-challenge-40days#readme",
+  "dependencies": {
+    "mongoose": "^7.0.2"
+  }
+}
