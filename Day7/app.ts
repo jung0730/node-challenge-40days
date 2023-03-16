@@ -2,7 +2,15 @@
 
 // https://hackmd.io/Fm3L9TMVRsqCZywxwdhBqQ
 
-import { Schema, model } from "mongoose";
+import { Schema, model, connect } from "mongoose";
+
+connect("mongodb://127.0.0.1:27017/drink")
+  .then(() => {
+    console.log("connection successful");
+  })
+  .catch((error) => {
+    console.log("connection failed");
+  });
 
 const drinkSchema = new Schema({
   product: {
@@ -41,5 +49,5 @@ const milkTea = new Drink({
 })
 
 milkTea.save()
-  .then(() => console.log("success"))
+  .then(() => console.log("data saved successfully"))
   .catch(error => console.log(error));
